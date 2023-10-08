@@ -1,0 +1,11 @@
+import scipy
+from scipy import stats
+import numpy as np
+
+
+
+n=50
+t= (6.5-4)/(3/np.sqrt(n))
+p=2*stats.t.cdf(-t,df=n-1)
+print(t)
+print(p)
